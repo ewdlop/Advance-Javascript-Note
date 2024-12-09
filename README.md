@@ -1,3 +1,8 @@
+#
+
+##
+```javascript
+
 const  = require('lodash');
 
 (function() {
@@ -23,3 +28,40 @@ const  = require('lodash');
     // Restore the original function after use
     .chunk = originalChunk;
 })();
+```
+
+##
+
+```javascript
+y ={
+  
+};
+
+y.d = function(){
+  return 2;
+}
+
+console.log(y.d())
+
+y.d = (() =>{
+  
+},42);
+
+console.log(y.d)
+
+y.d = (() => {
+  
+});
+
+console.log(y.d)
+
+y = {
+  
+}
+
+y = {
+  
+}.d = {}
+
+console.log(y.d)
+```
